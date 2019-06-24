@@ -26,7 +26,7 @@ Methodology used:
 * For each model was run 10 resamplings, 10 train/test splits with fitting and evaluation of the model;
 * The performance metric adopted for evaluating models in the competition was the f1-score so it was used here too. As our performance metric is a random variable due to the resampling, it has a mean and standard deviation, making necessary the creation of an objective function with the statistics of the random variable:
 
-![equation](http://www.sciweavers.org/tex2img.php?eq=%5Ctext%7Bmaximize%7D%20%5Cquad%20f_o%28u%29%20%3D%20%5Cmu%20%28u%29%20-%202%5Csigma%28u%29&bc=White&fc=Black&im=jpg&fs=12&ff=arev&edit=0)
+<img src="http://bit.ly/2Fwctaf" align="center" border="0" alt="\text{maximize} \quad f_o(u) = \mu (u) - 2\sigma(u)" width="265" height="19" />
 
 We can say that the objective function tries to balance the two objectives: higher mean, or better generalization, with a lower standard deviation, or lower instability.
 
