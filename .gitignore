@@ -2,6 +2,7 @@
 dataset/
 venv/
 xgboost/
+.ipynb_checkpoints/
 
 # specific files
 X_tr.csv
