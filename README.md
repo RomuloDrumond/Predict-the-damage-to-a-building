@@ -6,7 +6,7 @@ On the link above you may find the dataset as it was too large for uploading to 
 The analysis was split into many jupyter notebooks, as you may find below. 
 To install dependencies run `pip install -r requirements.txt` on the main directory.
 
-## [01 Analysis and preprocessing of the data](https://github.com/RomuloDrumond/Predict-the-damage-to-a-building/blob/master/01%20Analysis%20and%20preprocessing%20of%20the%20data.ipynb)
+## [01 Analysis and preprocessing of the data](https://nbviewer.jupyter.org/github/RomuloDrumond/Predict-the-damage-to-a-building/blob/master/01%20Analysis%20and%20preprocessing%20of%20the%20data.ipynb)
 
 There you can find me:
 
@@ -20,7 +20,7 @@ There you can find me:
 * Pandas
 * Numpy
 
-## [02 Building and evaluation of ML models](https://github.com/RomuloDrumond/Predict-the-damage-to-a-building/blob/master/02%20Building%20and%20evaluation%20of%20ML%20models.ipynb)
+## [02 Building and evaluation of ML models](https://nbviewer.jupyter.org/github/RomuloDrumond/Predict-the-damage-to-a-building/blob/master/02%20Building%20and%20evaluation%20of%20ML%20models.ipynb)
 
 Methodology used:
 
