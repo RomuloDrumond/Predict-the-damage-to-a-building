@@ -3,6 +3,7 @@ dataset/
 venv/
 xgboost/
 .ipynb_checkpoints/
+__pycache__
 
 # specific files
 X_tr.csv
