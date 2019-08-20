@@ -28,7 +28,7 @@ Methodology used:
 * The performance metric adopted in the competition was the f1-score so it was used here too. As our evaluation metric is a random variable due to the resampling, it has a mean and standard deviation, making necessary the creation of an objective function with the statistics of the random variable:
 
 <p align="center">
-  <img width="250" src="http://www.sciweavers.org/download/Tex2Img_1561408865.jpg">
+  <img width="250" src="https://latex.codecogs.com/svg.latex?%5Ctext%7Bmaximize%7D%20%5Cquad%20f_o%28u%29%20%3D%20%5Cmu%20%28u%29%20-%202%5Csigma%28u%29">
 </p>
 
 We can say that the objective function tries to balance the two objectives: higher mean, or better generalization, with a lower standard deviation, or lower instability.
@@ -48,3 +48,15 @@ We can say that the objective function tries to balance the two objectives: high
 5. Quadratic Gaussian Classifier (QGC);
 6. Decision Trees;
 7. Artificial Neural Networks.
+
+
+## [03 Dimensionality reduction and reevaluation of models](https://nbviewer.jupyter.org/github/RomuloDrumond/Predict-the-damage-to-a-building/blob/master/03%20Dimensionality%20reduction%20and%20reevaluation%20of%20models.ipynb)
+
+In this notebook we explore the effects of dimensionality reduction, using Principal Component Analysis (PCA), on the performance and training time of the classifiers used.
+
+As a hyperparameter, the conserved variance, p, was set to 98%. Also, the type of feature scaling was set to min-max as many transformed categorical features now have values 0 or 1, so, using standard scaling may result in the original numerical features dominating the PCA transformation, as they would have values ranging from -1 to +1.
+
+
+## [04 Choosing the best model and producing the submission file](https://nbviewer.jupyter.org/github/RomuloDrumond/Predict-the-damage-to-a-building/blob/master/04%20Choosing%20the%20best%20model%20and%20producing%20the%20submission%20file.ipynb)
+
+The tree-based model was adopted as it had shown better generalization and stability. A final model was fit in whole train data set, predictions were made in the test data set and saved in the `submission.csv` file.
