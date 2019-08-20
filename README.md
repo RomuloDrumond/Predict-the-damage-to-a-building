@@ -28,7 +28,7 @@ Methodology used:
 * The performance metric adopted in the competition was the f1-score so it was used here too. As our evaluation metric is a random variable due to the resampling, it has a mean and standard deviation, making necessary the creation of an objective function with the statistics of the random variable:
 
 <p align="center">
-  <img width="250" src="https://raw.githubusercontent.com/RomuloDrumond/Predict-the-damage-to-a-building/master/figures/objective_function.svg">
+  <img width="250" src="https://latex.codecogs.com/svg.latex?%5Ctext%7Bmaximize%7D%20%5Cquad%20f_o%28u%29%20%3D%20%5Cmu%20%28u%29%20-%202%5Csigma%28u%29">
 </p>
 
 We can say that the objective function tries to balance the two objectives: higher mean, or better generalization, with a lower standard deviation, or lower instability.
