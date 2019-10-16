@@ -52,7 +52,7 @@ We can say that the objective function tries to balance the two objectives: high
 
 ## [03 Dimensionality reduction and reevaluation of models](https://nbviewer.jupyter.org/github/RomuloDrumond/Predict-the-damage-to-a-building/blob/master/03%20Dimensionality%20reduction%20and%20reevaluation%20of%20models.ipynb)
 
-In this notebook we explore the effects of dimensionality reduction, using Principal Component Analysis (PCA), on the performance and training time of the classifiers used.
+In this notebook we explore the effects of dimensionality reduction, using **Principal Component Analysis (PCA)**, on the performance and training time of the classifiers used.
 
 As a hyperparameter, the conserved variance, p, was set to 98%. Also, the type of feature scaling was set to min-max as many transformed categorical features now have values 0 or 1, so, using standard scaling may result in the original numerical features dominating the PCA transformation, as they would have values ranging from -1 to +1.
 
